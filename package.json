@@ -50,12 +50,12 @@
     "html-to-docx"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/qsyjlab/html-docx-js-typescript-modify-modify#readme",
+  "homepage": "https://github.com/qsyjlab/html-docx-js-typescript-modify#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qsyjlab/html-docx-js-typescript-modify-modify.git"
+    "url": "git+https://github.com/qsyjlab/html-docx-js-typescript-modify.git"
   },
   "bugs": {
-    "url": "https://github.com/qsyjlab/html-docx-js-typescript-modify-modify/issues"
+    "url": "https://github.com/qsyjlab/html-docx-js-typescript-modify/issues"
   }
 }
