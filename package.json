@@ -40,7 +40,7 @@
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags",
-    "release": "npm publish --registry https://registry.npmjs.org"
+    "release": "npm version patch && npm publish --registry https://registry.npmjs.org"
   },
   "keywords": [
     "html-docx-js",
