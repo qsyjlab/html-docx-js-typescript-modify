@@ -1,4 +1,4 @@
-# html-docx-js-typescript
+# html-docx-js-typescript-modify
 
 [![NPM version][npm-image]][npm-url]
 
@@ -9,7 +9,7 @@ Convert HTML documents to docx format.
 ## Installing
 
 ```
-npm install html-docx-js-typescript --save-dev
+npm install html-docx-js-typescript-modify --save-dev
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ Support node.js and browser enviroment, including vue/react/angular.
 #### Vue.js usage demo:
 
 ```js
-import { asBlob } from 'html-docx-js-typescript'
+import { asBlob } from 'html-docx-js-typescript-modify'
 // if you want to save the docx file, you need import 'file-saver'
 import { saveAs } from 'file-saver'
 
@@ -55,7 +55,7 @@ const data = await asBlob(htmlString, { orientation: 'landscape', margins: { top
 
 If you use this package in a Typescript file and declare the options to an independent `Object` like:
 ``` js
-import { asBlob } from 'html-docx-js-typescript'
+import { asBlob } from 'html-docx-js-typescript-modify'
 const opt = {
   margin: {
     top: 100
@@ -78,5 +78,5 @@ const opt = {
 
 MIT
 
-[npm-image]: https://img.shields.io/npm/v/html-docx-js-typescript
-[npm-url]: https://npmjs.com/package/html-docx-js-typescript
+[npm-image]: https://img.shields.io/npm/v/html-docx-js-typescript-modify
+[npm-url]: https://npmjs.com/package/html-docx-js-typescript-modify
