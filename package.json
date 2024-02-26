@@ -1,6 +1,6 @@
 {
   "name": "html-docx-js-typescript-modify",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Convert HTML documents to docx format.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -40,7 +40,7 @@
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags",
-    "release": "npm version patch && npm publish --registry http://registry.npmjs.org"
+    "release": "npm patch && npm publish --registry http://registry.npmjs.org"
   },
   "keywords": [
     "html-docx-js",
