@@ -4,7 +4,10 @@ import { contentTypesXml, documentXmlRels, relsXml } from './assets'
 import { documentTemplate, Orient, Margins, defaultMargins } from './templates'
 import { isBrowser } from 'browser-or-node'
 
-export type DocumentOptions = typeof defaultDocumentOptions
+export type DocumentOptions = typeof defaultDocumentOptions & {
+  pageWidth?: number
+  pageHeight?: number
+}
 
 const defaultDocumentOptions = {
   orientation: 'portrait' as Orient,
@@ -31,7 +34,7 @@ function getBinaryData(str: string) {
 }
 
 function renderDocumentFile(documentOptions: DocumentOptions) {
-  const { orientation, margins } = documentOptions
+  const { orientation, margins, pageHeight, pageWidth } = documentOptions
   const marginsOptions = mergeOptions(defaultMargins, margins)
   let width = 0
   let height = 0
@@ -42,6 +45,15 @@ function renderDocumentFile(documentOptions: DocumentOptions) {
     width = 12240
     height = 15840
   }
+
+  if(pageHeight) {
+    height = pageHeight
+  }
+  if(pageWidth) {
+    width = pageWidth
+  }
+
+
   return documentTemplate(width, height, orientation, marginsOptions)
 }
 
