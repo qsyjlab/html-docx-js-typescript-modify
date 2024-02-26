@@ -46,13 +46,12 @@ function renderDocumentFile(documentOptions: DocumentOptions) {
     height = 15840
   }
 
-  if(pageHeight) {
+  if (pageHeight) {
     height = pageHeight
   }
-  if(pageWidth) {
+  if (pageWidth) {
     width = pageWidth
   }
-
 
   return documentTemplate(width, height, orientation, marginsOptions)
 }
